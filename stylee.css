@@ -43,8 +43,8 @@ datalist {
 
 main {
    
-   
-    width:70%;
+    
+    width:50%;
     height: 60%;
    
    
@@ -80,3 +80,12 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+.space{
+  width:15%;
+}
+
+.prawospace {
+  width:5%;
+}
+
