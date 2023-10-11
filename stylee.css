@@ -50,9 +50,12 @@ main {
    
    
 }
-aside{
-  width:30%;
+aside {
+  width:20%;
   height: 60%;
+  display: flex;
+  justify-content: center;
+
 }
 footer {
   width:100%;
@@ -65,4 +68,15 @@ footer {
 .container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.tomasz {
+  display: flex;
+}
+
+.reklamy{
+  width:10%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
 }
