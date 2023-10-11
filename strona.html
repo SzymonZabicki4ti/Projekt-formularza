@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylee.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+           <h1> Formularz zakupu auta</h1>
+        </header>
+
+    <from action="#"></from>
+    <fieldset>  
+        <legend>Dane nabywcy</legend>
+    <label for="firstName">
+        Imię:
+        <input type="text" name="firstName" placeholder="np. Jan">
+    </label>
+    <label for="surName">
+        Nazwisko:
+        <input type="text" name="surName" placeholder="np. Nowak">
+    </label>
+</fieldset> 
+
+<fieldset>  
+<legend> Cena maksymalna</legend> 
+<form >
+    <input type="range" id="a" name="a" min="50000" max="500000" step="1000" oninput="result.value=a.value"/>          
+    <output name="result" for="a">400000</output>zł
+</form>    
+</fieldset> 
+
+    <fieldset>  
+        <legend>Model samochodu</legend>
+    <label for="check1">
+        AUDI: <input type="radio" name="marka" id="AUDI">
+        BMW: <input type="radio" name="marka" id="BMW">
+        NISSAN: <input type="radio" name="marka" id="BMW">
+    </label>
+</fieldset>  
+
+<fieldset>  
+    <legend>Kolor pojazdu</legend>
+<label for="color">
+    <input type="color" name="firstName" placeholder="np. Jan">
+</label>
+</fieldset> 
+
+<fieldset>  
+    <legend>Ilość drzwi</legend>
+<label for="dors">
+    <input type="number" name="dors" id="dors" min="2" max="5">
+</label>
+</fieldset> 
+<fieldset>  
+    <legend>Rok produkcji</legend>
+
+<input type="range" id="tempB" name="temp" list="values" />
+
+<datalist id="values">
+ 
+</datalist>
+</label>
+</fieldset> 
+
+<input type="submit" value="wyślij"/>
+<input type="reset" value="resetuj"/>
+
+</from>
+</div>
+</body>
+</html>

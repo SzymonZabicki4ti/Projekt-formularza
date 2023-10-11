@@ -1,0 +1,41 @@
+
+
+label {
+    display: flex;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 5px;
+}
+
+.container > header {
+   
+   
+    width:100%;
+   
+    background-color: rgb(170, 162, 114);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+  }
+  
+  option {
+    padding: 0;
+  }
+  
+  input[type="range"] {
+    width: 200px;
+    margin: 0;
+  }
