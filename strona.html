@@ -12,7 +12,7 @@
         <header>
            <h1> Formularz zakupu auta</h1>
         </header>
-
+<main>
     <from action="#"></from>
     <fieldset>  
         <legend>Dane nabywcy</legend>
@@ -24,22 +24,27 @@
         Nazwisko:
         <input type="text" name="surName" placeholder="np. Nowak">
     </label>
+    <label for="surName">
+        e-mail:
+        <input type="email" name="email" placeholder="jan.nowak@gmail.com">
+    </label>
 </fieldset> 
 
 <fieldset>  
-<legend> Cena maksymalna</legend> 
+<legend> Cena maksymalna </legend> 
 <form >
     <input type="range" id="a" name="a" min="50000" max="500000" step="1000" oninput="result.value=a.value"/>          
     <output name="result" for="a">400000</output>zł
 </form>    
 </fieldset> 
 
-    <fieldset>  
+    <fieldset class="modele">  
         <legend>Model samochodu</legend>
     <label for="check1">
         AUDI: <input type="radio" name="marka" id="AUDI">
         BMW: <input type="radio" name="marka" id="BMW">
-        NISSAN: <input type="radio" name="marka" id="BMW">
+        NISSAN: <input type="radio" name="marka" id="NISSAN">
+        MERCEDES: <input type="radio" name="marka" id="MERCEDES">
     </label>
 </fieldset>  
 
@@ -57,9 +62,12 @@
 </label>
 </fieldset> 
 <fieldset>  
-    <legend>Rok produkcji</legend>
-
-<input type="range" id="tempB" name="temp" list="values" />
+    <legend> Rok produkcji </legend> 
+    <form >
+        <input type="range" id="b" name="b" min="1990" max="2023" step="1" oninput="result.value=b.value"/>          
+        <output name="result" for="b">2010</output>r.
+    </form>    
+    </fieldset> 
 
 <datalist id="values">
  
@@ -69,7 +77,32 @@
 
 <input type="submit" value="wyślij"/>
 <input type="reset" value="resetuj"/>
-
+</main>
+<aside>
+    <fieldset>
+        <legend>Ostatnio sprzedane:</legend> 
+     <p>
+<img src="https://www.autocentrum.pl/dzQ2NC5qSxswUDhwGgpGD3MIbGxUEkkcOF4rbFYQFlcnVzwwXB4KVWRRKnoBE1QfZAV7cwcQUEhnCn0gVkBTG35fKzFWFAAfIh8lL1QCBVc2Hzl3A0VKECFVbD4" width="90%"><img>
+</p> 
+<p>
+    <img src="https://www.autocentrum.pl/dzQ2NC5qSxswUDhwGgpGD3MIbGxUEkkcOF4rbFYQFlcnVzwwXB4KVWRRKnoBE1QfZAV7cwcQUEhnCn0gVkBTG35fKzFWFAAfIh8lL1QCBVc2Hzl3A0VKECFVbD4" width="90%"><img>
+    </p>
+    <p>
+        <img src="https://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/autoblog/2021/09/nissan-gt-r-premium-edition-t-spec-przod-bok-1024x576.jpg" width="90%"><img>
+        </p>  
+</fieldset>
+</aside>
+<footer>
+    <from action="#"></from>
+    <fieldset>  
+        <legend>Komentarze</legend>
+    <label for="com">
+        <textarea name="com" id="com" cols="15" rows="3" placeholder="wpisz swoje uwagi"></textarea>
+    </label>
+    <fieldset class="kom1"> Bardzo fajna strona polecam!!! </fieldset>
+    
+    </fieldset> 
+</footer>
 </from>
 </div>
 </body>
